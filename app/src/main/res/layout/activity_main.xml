@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e2d0f2"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textUri"
+        android:hint="Enter URL"
+        />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/e1"
+        android:background="@drawable/search"
+         />
+
+    <WebView
+        android:id="@+id/w1"
+        android:layout_width="360dp"
+        android:layout_height="510dp"
+        android:layout_below="@+id/e1"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/b2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/w1"
+        android:background="@drawable/fb"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="70dp"
+        android:id="@+id/b3"
+        android:layout_toRightOf="@+id/b2"
+        android:layout_below="@id/w1"
+        android:background="@drawable/yt"
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="70dp"
+        android:id="@+id/b4"
+        android:layout_toRightOf="@+id/b3"
+        android:layout_below="@id/w1"
+        android:background="@drawable/google"
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="70dp"
+        android:id="@+id/b5"
+        android:layout_toRightOf="@+id/b4"
+        android:layout_below="@id/w1"
+        android:background="@drawable/logo"
+        />
+
+    
+</RelativeLayout>
